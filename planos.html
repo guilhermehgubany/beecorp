@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Página Inicial</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/BeeCorp.png">
+        </div>
+        <ul class="navbar">
+            <li class="agora">Início</li>
+            <li>Sobre nós</li>
+            <li>Planos</li>
+            <li>Contato</li>
+        </ul>
+        <div class="btn">
+            <button>Entrar</button>
+            <button>Cadastre-se</button>
+        </div>
+    </div>
+
+
+    <div class="plano">
+        <div class="sub">
+            <h1>Os melhores planos para você</h1>
+        </div>
+
+        <div class="espacamento">
+            <div class="basico">
+                <h1>Básico</h1>
+                <ul class="lista">
+                    <li>1 mês de garantia para os equipamentos</li>
+                    <li>Suporte técnico por um mês</li>
+                    <li>Instalação por colméia R$120,00</li>
+                    <li>Planos para até 10 colméias</li>
+                </ul>
+                <div class="preco">R$110/Mês </div>
+                <div class="movimento"> <button class="assinatura">Assinar</button></div>
+            </div>
+
+            <div class="intermediario">
+                <h1>Intermediário</h1>
+                <ul class="intens">
+                    <li>2 Meses de garantia para os equipamentos</li>
+                    <li>Suporte técnico por 2 meses</li>
+                    <li>Instalação por colméia R$100,00</li>
+                    <li>de 11 até 30 colméias</li>
+                </ul>
+                <div class="preco">R$195/Mês</div>
+                <div class="movimento"> <button class="assinatura">Assinar</button></div>
+
+            </div>
+
+            <div class="entusiasta">
+                <h1>Entusiasta</h1>
+                <ul class="intens">
+                    <li>4 Meses de garantia para os equipamentos</li>
+                    <li>Suporte técnico por 3 meses</li>
+                    <li>Instalação por colméia R$90,00</li>
+                    <li>Para mais de 30 colméias</li>
+                </ul>
+                <div class="preco">R$220/Mês</div>
+                <div class="movimento"> <button class="assinatura">Assinar</button></div>
+
+            </div>
+
+            <div class="calculadora">
+                <h1>Calcule seu custo</h1>
+                <div class="digite">
+                    <h4>Digite o número de colméias:</h4><input id="input_colmeias">
+                </div>
+                <ul class="itensCalc">
+                    <li id="li_instalacao">Instalação: R$ x,xx</li>
+                    <li id="li_mensalidade">Mensalidade: R$ x,xx</li>
+                </ul>
+                <div class="movimentoCalc">
+                    <button class="calcular" onclick="calcular()">Calcular</button>
+                    <button class="assinatura">Assinar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="separar"> </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="quadro">
+                    <img src="img/BeeCorp.png">
+                </div>
+                <div class="nav_footer">
+                    <div class="inicio">
+                        <a href="#">Início</a>
+                    </div>
+                    <div class="sobre_nos">
+                        <a href="#">Sobre nós</a>
+                    </div>
+                    <div class="planos">
+                        <a href="#">Planos</a>
+                        <br>
+                        <p>Básico</p>
+                        <p>Intermediário</p>
+                        <p>Entusiasta</p>
+                    </div>
+                    <div class="contato">
+                        <a href="#">Contato</a>
+                        <br>
+                        <p>Rua Haddock Lobo, 595 -
+                            Cerqueira César
+                        </p>
+                        <p>contato@beecorp.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    function calcular() {
+        var nmr_colmeias = Number(input_colmeias.value)
+        if (nmr_colmeias <= 10) {
+            li_instalacao.innerHTML = "Instalação: R$" + (120 * nmr_colmeias).toFixed(2)
+            li_mensalidade.innerHTML = "Mensalidade: R$110/Mês"
+        } else if (nmr_colmeias <= 30) {
+            li_instalacao.innerHTML = "Instalação: R$" + (100 * nmr_colmeias).toFixed(2)
+            li_mensalidade.innerHTML = "Mensalidade: R$195/Mês"
+        } else {
+            li_instalacao.innerHTML = "Instalação: R$" + (90 * nmr_colmeias).toFixed(2)
+            li_mensalidade.innerHTML = "Mensalidade: R$220/Mês"
+        }
+
+    }
+</script>

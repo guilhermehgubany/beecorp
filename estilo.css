@@ -1,0 +1,501 @@
+* {
+  font-family: "poppins";
+}
+
+.header {
+  color: #f7f7f7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.87);
+  position: fixed;
+  top: 0;
+  font-size: 22px;
+  font-weight: 500px;
+}
+
+.logo img {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0;
+  width: 600px;
+  align-items: center;
+
+  /*border: 3px solid blue;*/
+}
+
+.navbar li {
+  color: #f7f7f7;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.btn button {
+  border: 0;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0;
+  width: 166px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+
+  background: #ffcb7d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.banner {
+  height: 100vh;
+  background-image: url(img/background.png);
+
+  background-size: cover;
+  display: flex;
+  width: 100vw;
+
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.banner .container {
+  margin: 0px;
+  height: 90%;
+  width: 90%;
+  display: flex;
+
+  justify-content: flex-start;
+}
+
+.banner .card {
+  background-color: #fac08a85;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  color: #000000;
+  padding: 0;
+  font-size: 36px;
+}
+
+.card p {
+  width: 85%;
+  align-self: flex-end;
+}
+
+.btncard button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 350px;
+  height: 80px;
+  font-size: 25px;
+  background: #ffcb7d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border-style: none;
+}
+
+button a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.valores {
+  background-color: #f1c454;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+}
+
+.valores .container {
+  width: 85vw;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.valores .card {
+  text-decoration: none;
+  width: 350px;
+  height: 350px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  margin: 20px 20px 0 20px;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 2%;
+  text-align: center;
+  flex-direction: column;
+}
+
+.valores .card p {
+  width: 300px;
+  align-self: center;
+  margin: 0;
+}
+
+.valores .icon img {
+  width: 70px;
+}
+
+.quem_somos {
+  background-color: rgba(255, 254, 235, 1);
+  padding-top: 100px;
+  width: 100vw;
+}
+
+.quem_somos .container {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quem_somos .quadro img {
+  width: 480px;
+  height: 340px;
+  border-radius: 20px;
+}
+
+.quem_somos .container p {
+  width: 520px;
+  height: 400px;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+.quem_somos .container h1 {
+  font-weight: 900;
+}
+
+.fale_conosco {
+  background-color: white;
+  width: 100vw;
+  height: 700px;
+}
+
+.fale_conosco .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fale_conosco .container .ui_content {
+  font-weight: 400;
+  width: 525px;
+  font-size: 22px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.fale_conosco .container .ui_content img {
+  width: 100px;
+}
+
+.fale_conosco .form_box b {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.fale_conosco .form_box {
+  width: 400px;
+  height: 570px;
+  background: rgba(255, 252, 174, 0.73);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-left: 60px;
+  margin-top: 60px;
+  padding-bottom: 20px;
+}
+
+.fale_conosco .form_box p {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.fale_conosco .ipt {
+  height: 32px;
+  width: 350px;
+}
+
+.ipt_msg {
+  height: 100px;
+  width: 350px;
+}
+
+.footer {
+  background-color: #000000;
+  height: 200px;
+  padding: 30px;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer .container .nav_footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.footer .container .nav_footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer .container .nav_footer p {
+  margin: 0;
+}
+
+.nav_footer .contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.nav_footer .planos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plano {
+  height: 533px;
+}
+
+.espacamento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.sub {
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.basico {
+  border: 2px solid black;
+  width: 280px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  justify-content: space-around;
+}
+
+.basico h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.preco {
+  display: flex;
+  justify-content: center;
+
+}
+
+.assinatura {
+  border: 2px solid rgba(243, 165, 21, 0.699);
+  border-radius: 5px;
+  width: 100px;
+  font-weight: bold;
+  background-color: #f1c454;
+}
+
+.movimento {
+  display: flex;
+  justify-content: center;
+
+}
+
+.intermediario {
+  border: 2px solid black;
+  width: 280px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  justify-content: space-around;
+}
+
+.intermediario h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.preco {
+  display: flex;
+  justify-content: center;
+
+}
+
+.assinatura {
+  border: 2px solid rgba(243, 165, 21, 0.699);
+  border-radius: 5px;
+  width: 100px;
+  font-weight: bold;
+  background-color: #f1c454;
+  cursor: pointer;
+}
+
+.entusiasta {
+  border: 2px solid black;
+  width: 280px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  justify-content: space-around;
+}
+
+.entusiasta h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.preco {
+  display: flex;
+  justify-content: center;
+
+}
+
+.assinatura {
+  border: 2px solid rgba(243, 165, 21, 0.699);
+  border-radius: 5px;
+  width: 100px;
+  font-weight: bold;
+  background-color: #f1c454;
+  cursor: pointer;
+}
+
+.calculadora {
+  border: 2px solid black;
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin-top: 30px;
+  background-color: #f1c454;
+  justify-content: space-around;
+  padding: 10px;
+
+}
+
+.calculadora h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+
+
+}
+
+
+.calculadora .assinatura {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 100px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.calculadora .calcular {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 100px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* .digite {
+  justify-content: center;
+
+} */
+
+.digite h4{
+  font-weight: 100;
+  margin-left: 10px ;
+  margin-bottom: 0  ;
+}
+
+.digite input {
+  width: 225px;
+  display: flex;
+  margin-left: 10px;
+  border-radius: 3px;
+  border-color:black;
+}
+
+.itensCalc {
+  display: list-item;
+  list-style: none;
+  /* align-items: start; */
+  padding: 10px;
+}
+
+.movimentoCalc {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.separar {
+  height: 30px;
+}
